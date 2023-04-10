@@ -269,7 +269,8 @@ h2 {
     height: 20px;
     cursor: pointer;
 }
-.social-media-items:hover {
+.social-media-items:hover,
+.social-media-items:focus {
     background-color: var(--active-color);
     fill: #ffffff;
     border-radius: 50%;
@@ -434,7 +435,8 @@ h2 {
     height: 44px;
     fill: #ffffff;
 }
-.footer-media-items:hover {
+.footer-media-items:hover,
+.footer-media-items:focus {
     background-color: var(--active-color);
     border-radius: 50%;
 }
