@@ -141,9 +141,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.color {
-    background-image: url(../images/background.jpg),
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-title);
+
 }
 
 .title {
@@ -256,6 +259,9 @@ h2 {
     padding: 0 32px 30px 32px;
     margin-top: 16px;
 }
+.social-media-list {
+    list-style: none;
+}
 .social-media-items {
     display: flex;
     align-items: center;
@@ -263,6 +269,8 @@ h2 {
     fill: #afb1b8;
     width: 44px;
     height: 44px;
+    background: #ffffff;
+    border-radius: 50%;
 }
 .icon-social {
     width: 20px;
@@ -276,11 +284,11 @@ h2 {
     border-radius: 50%;
 }
 /*nasi klienci*/
-.container-clients {
+.client-list {
     display: flex;
     gap: 30px;
+    list-style: none;
 }
-
 .icon-clients {
     width: 170px;
     height: 92px;
@@ -289,8 +297,12 @@ h2 {
     cursor: pointer;
     border-radius: 4px;
 }
-.icon-clients:hover,
-.icon-clients:focus {
+.client-items {
+    width: 170px;
+    height: 92px;
+}
+.client-items .icon-clients:hover,
+.client-items .icon-clients:focus {
     border-color: var(--active-color);
     fill: var(--active-color);
 }
@@ -305,7 +317,7 @@ h2 {
 .menu-but {
     display: flex;
     gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     align-items: center;
     width: fit-content;
 }
@@ -436,6 +448,9 @@ h2 {
     fill: #ffffff;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+.footer-media-list {
+    list-style: none;
 }
 .footer-media-items:hover,
 .footer-media-items:focus {
