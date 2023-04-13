@@ -262,6 +262,9 @@ h2 {
 .social-media-list {
     list-style: none;
 }
+* {
+    outline: none;
+}
 .social-media-items {
     display: flex;
     align-items: center;
